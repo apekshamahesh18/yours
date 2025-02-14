@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, My Love!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #ff5e5e;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: heart-beat 1.5s infinite;
+        }
+
+        .message {
+            color: #ff3333;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .heart {
+            background: url('https://img.icons8.com/ios/452/heart-pulse.png') no-repeat center;
+            background-size: 150px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        /* Cake with Candles */
+        .cake {
+            width: 300px;
+            height: 200px;
+            background-color: #f8d7b9;
+            border-radius: 20px;
+            position: relative;
+            margin: 40px auto;
+            display: block;
+        }
+
+        .cake::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: 10px;
+            width: 280px;
+            height: 30px;
+            background-color: #f5c6a5;
+            border-radius: 5px;
+        }
+
+        .candle {
+            width: 10px;
+            height: 30px;
+            background-color: #ffcc00;
+            position: absolute;
+            top: -25px;
+            border-radius: 3px;
+        }
+
+        .candle.flame {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 10px;
+            background-color: #ff6600;
+            border-radius: 50%;
+            animation: flameFlicker 0.1s infinite alternate;
+        }
+
+        .candle:nth-child(1) { left: 30px; }
+        .candle:nth-child(2) { left: 70px; }
+        .candle:nth-child(3) { left: 110px; }
+        .candle:nth-child(4) { left: 150px; }
+        .candle:nth-child(5) { left: 190px; }
+        .candle:nth-child(6) { left: 230px; }
+        .candle:nth-child(7) { left: 270px; }
+
+        @keyframes flameFlicker {
+            0% { opacity: 1; transform: translateX(-50%) scale(1); }
+            100% { opacity: 0.8; transform: translateX(-50%) scale(1.1); }
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #ff6666;
+        }
+
+        @keyframes heart-beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heart"></div>
+        <h1>Happy Valentine's Day, My Love!</h1>
+        <p class="message">You mean the world to me. I'm so grateful to have you in my life!</p>
+        <p class="message">You are my everything, my heart, my soul. I love you forever and always!</p>
+
+        <!-- Cake with Candles -->
+        <div class="cake">
+            <div class="candle flame"></div>
+            <div class="candle flame"></div>
+            <div class="candle flame"></div>
+            <div class="candle flame"></div>
+            <div class="candle flame"></div>
+            <div class="candle flame"></div>
+            <div class="candle flame"></div>
+        </div>
+
+        <div class="footer">
+            <p>Created with ❤️ just for you.</p>
+        </div>
+    </div>
+
+</body>
+</html>
